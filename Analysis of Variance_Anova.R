@@ -16,7 +16,9 @@
 4          A   71.02
 5          A   80.81
 6          A   82.73
-
+> putinanov <- lm(Mass_kg ~ Population, data=data.Q1)
+> library(car)
+Loading required package: carData
 > Anova(putinanov, type=3)
 Anova Table (Type III tests)
 
