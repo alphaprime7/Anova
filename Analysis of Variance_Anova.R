@@ -1,3 +1,22 @@
+> setwd("~/Documents/BIOMETRY/week9")
+> r1 <-rnorm(89, runif(1, 66.6, 70.8), 10.98)
+> r2 <-rnorm(67, runif(1, 70.46, 75.8), 8.9)
+> r3 <-rnorm(125, runif(1, 90.6, 101.4), 7.9)
+> r4 <-rnorm(98, runif(1, 135.4, 154.5), 8.98)
+> data.Q1 <-cbind.data.frame(c(rep("A", length(r1)),
++                              rep("B", length(r2)),
++                              rep("C", length(r3)),
++                              rep("D", length(r4))), round(c(r1, r2, r3, r4), 2))
+> colnames(data.Q1)<-c("Population","Mass_kg")
+> head(data.Q1)
+  Population Mass_kg
+1          A   79.28
+2          A   56.87
+3          A   70.45
+4          A   71.02
+5          A   80.81
+6          A   82.73
+
 > Anova(putinanov, type=3)
 Anova Table (Type III tests)
 
