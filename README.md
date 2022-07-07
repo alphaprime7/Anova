@@ -1,1 +1,1 @@
-This project is from my Biostatistics class
+This project is from my Biometry class
